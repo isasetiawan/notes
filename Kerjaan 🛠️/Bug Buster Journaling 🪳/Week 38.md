@@ -1,0 +1,113 @@
+| Critical | Medium | Non Bug | AFI | Oncall |
+| -------- | ------ | ------- | --- | ------ |
+| 0        | 4      | 2       | 4   | Rifan  |
+
+- Tidak mendapatkan kode OTP
+    - Thread:
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726454250328019](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726454250328019)
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726555295696279](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726555295696279)
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726634499464239](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726634499464239)
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726642516202979](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726642516202979)
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726645633951289](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726645633951289)
+    - Issue:
+        - Rate limit whatsapp
+    - Short-term: default otp
+    - Long term:
+        - AFI Change 2nd retry to sms
+    - Add option retry channel on mobile and web
+    - Severity **AFI**
+- Issue tidak bisa ubah nomor HP
+    - Thread:
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726467541821649](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726467541821649)
+    - Issue:
+        - Update agent data on internal portal sampingan
+            - Province _id null for Bandung
+            - Duplicate Phone number
+    - Short-term:
+        - Update city domicile to Kota Bandung/ Kab. Bandung
+        - Update deleted phone number
+    - Long-term:
+        - AFI Enhance internal endpoint response to 400
+    - Severity **AFI**
+- Error Blank Page
+    - Thread
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726557540575659](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726557540575659)
+    - Issue:
+        - Couldn't resolve name 'ssosvc-grpc.service.ap-southeast-1.consul.'
+    - Shot-term:
+        - SRE restart node console - done
+    - Severity **Non Bug**
+- Tidak bisa ubah nama & working days di branch
+    - Thread:
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726567325260929](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726567325260929)
+    - Issue:
+        - Response “There are still attendance data in need of approval in this period….”
+        - There are request agents that are stuck but do not appear on the pending request page
+    - Short-term:
+        - [Query update](https://docs.google.com/spreadsheets/d/1E1nvSlji8EiJ-BHVtXociOKizxvPxG3AR8DgZOaer0s/edit?gid=0#gid=0)
+    - Long-term:
+        - AFI information date & agent id pending request
+    - Severity **AFI**
+- Client sudah dibuatkan account, namun tidak bisa verifikasi dan membuat password
+    - Thread:
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726595810917849](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726595810917849)
+    - Issue:
+        - The issue arose due to an uncovered JWT change.
+        - \"PUT /v1/internal/clients/105/account/5904/status HTTP/1.1\" 401"}
+        - Terjadi di beberapa service lain (hcmsvc, accountsvc, projectsvc), dan terjadi di dev ,stg, prod terutama token internal ke kerjaansvc
+    - Short-term:
+        - [Query update](https://docs.google.com/spreadsheets/d/1E1nvSlji8EiJ-BHVtXociOKizxvPxG3AR8DgZOaer0s/edit?gid=0#gid=0)
+    - Long-term:
+        - Fix jwt token - done
+    - Severity **Medium**
+- Tidak bisa menambahkan branch user
+    - Thread:
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726633906804809](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726633906804809)
+    - Issue:
+        - The issue arose due to an uncovered JWT change.
+    - Short-term:
+        - N/A
+    - Long-term:
+        - Fix jwt token - done
+    - Severity **Non Bug**
+- Tidak bisa verifikasi Email ( selalu muncul tautan kadaluarsa)
+    - Thread:
+        - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726646211460199](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726646211460199)
+    - Issue:
+        - “invalid or expired jwt: signature is invalid”
+        - Error come from hit API with cache jwt token expired -> master error api
+    - Short-term:
+        - Using incognito or other browser or hard refresh
+    - Long-term:
+        - Fix from FE
+    - Severity **Medium**
+- Short-term Request:
+    - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726648096194319](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726648096194319)
+    - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726720855930999](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726720855930999)
+    - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726728082969069](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726728082969069)
+    - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726733199174479](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726733199174479)
+    - [https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726733683057209](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1726733683057209)
+- gagal melakukan verifikasi account baru satu email yg sama pada multiple client
+    - Issue:
+        - FE replace + on payload resend email
+        - link obtained from metabase
+    - Short-term:
+        - Using link from email
+    - Long-term:
+        - Fix from FE
+	- Severity **Medium**
+- Bukti transfer dari xendit tidak terkirim ke email
+    - Issue:
+        - Email not sent from xendit
+    - Shot-term:
+        - Resend email from xendit dashboard
+    - Long-term: N/A
+	- Severity **Medium**
+- Foto terpotong ketika membuka link via export submission
+    - Issue:
+        - Can’t view full size photo
+    - Short-term:
+        - Open new tab image
+    - Long-term:
+        - Fix from FE
+	- Severity **AFI**

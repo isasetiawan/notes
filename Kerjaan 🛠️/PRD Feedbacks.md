@@ -1,0 +1,1 @@
+I feel that current written PRD is to fixated on user perspective that represented with big chunk of user story. Meanwhile, the PRD should consist the perspective of whole system that could be represented by process flow
