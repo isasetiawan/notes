@@ -333,3 +333,6 @@ Question schema
   "description": "Dynamic form"  
 }
 ```
+
+# Conclusion
+Issue happened due to un-removed skipped answer keys from question schema.
