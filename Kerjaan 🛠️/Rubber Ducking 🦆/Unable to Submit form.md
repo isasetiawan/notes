@@ -23,7 +23,7 @@ Submitted form
         {
           "fotoOutletFullTampakDepan_85I8A2N6":
             [
-              "https:\/\/file.kerjaan.co.id\/v1\/sessions\/files\/ac55f453-64d4-4cf7-90c3-3dc5d6db7dab-orig.jpg",
+              "https://file.kerjaan.co.id/v1/sessions/files/ac55f453-64d4-4cf7-90c3-3dc5d6db7dab-orig.jpg",
             ],
           "catatanTambahanDariArcoOpsional_rVdllTvw": "test",
           "nomorTeleponAktifWa_tw7mRWEv": "88885121",
