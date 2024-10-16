@@ -336,3 +336,13 @@ Question schema
 
 # Conclusion
 Issue happened due to un-removed skipped answer keys from question schema.
+
+
+```json
+{
+	"section_1":{},
+	"section_2":{},
+	"section_3":{},
+	"section_4":{},
+}
+```
