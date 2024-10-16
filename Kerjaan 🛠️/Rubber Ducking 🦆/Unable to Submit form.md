@@ -338,9 +338,12 @@ Question schema
 Issue happened due to un-removed skipped answer keys from question schema.
 
 
+Attempt 1 exclude skipped unique
 ```json
 {
-	"section_1":{},
+	"section_1":{
+		"unique_as123": ""
+	},
 	"section_2":{},
 	"section_3":{},
 	"section_4":{},
