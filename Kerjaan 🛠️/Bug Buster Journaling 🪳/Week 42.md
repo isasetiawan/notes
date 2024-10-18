@@ -20,9 +20,13 @@
 		* The employee has been unassigned from the branch
 	* Solution
 		* Consider not null previous branch
+		* Line of [code](https://github.com/sampingantech/kerjaansvc/blob/d2c2ff64ee2a6944970ce7bec02a50c435f6ff49/app/models/branch_agents.py#L79-L84)
 	* Status
+		* Deployed
 * **Tidak bisa submit form "Tidak dapat terhubung ke server SE500"**
 	* Thread
+		* [Link](https://staffinc-co.slack.com/archives/C015UUA1K8F/p1728965476906379)
 	* Issue
+		* 
 	* Solution
 	* Status
